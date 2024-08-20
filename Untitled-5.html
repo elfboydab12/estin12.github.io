@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome {{ current_user.username }}</h1>
+<p>This is your home page.</p>
+<a href="{{ url_for('chat', user_id=1) }}">Chat with User 1</a> <!-- Adjust for your users -->
+{% endblock %}
